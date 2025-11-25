@@ -99,9 +99,8 @@ def play_music():
     except Exception:
         speak("Sorry sir, I could not find your music folder.")
 
-
 def gemini_model_response(user_input):
-    GEMINI_API_KEY = "AIzaSyAx16oYe6DPXA6EwPJuKiTUc1PZHcE9JfY"
+    GEMINI_API_KEY = "api key here"
     genai.configure(api_key=GEMINI_API_KEY) 
     model = genai.GenerativeModel("gemini-2.5-flash") 
     prompt = f"Your name is JARVIS, You act like JARVIS. Answar the provided question in short, Question: {user_input}"
